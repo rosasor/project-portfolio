@@ -1,6 +1,11 @@
 import type { Metadata } from "next";
+
+import NavBar from "@/components/NavigationMenu"
+import Footer from "@/components/Footer"
+
+
 import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+import "./styles/globals.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -13,8 +18,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "It's Elena's Portfolio :)",
-  description: "Elena's Frontend Developer & UI/UX Designer Portfolio",
+  title: "Hello, World!",
+  description: "Bye",
 };
 
 export default function RootLayout({
@@ -24,10 +29,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+      <body className={`flex flex-col items-center min-h-screen p-8 ${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <div className="flex flex-col max-w-[800px]" >
+
+          <nav>
+            <NavBar />
+          </nav>
+
+            {children}
+
+          <footer>
+            <Footer />
+          </footer>
+
+        </div>
       </body>
     </html>
   );
