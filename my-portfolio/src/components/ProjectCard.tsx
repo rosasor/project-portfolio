@@ -32,7 +32,7 @@ const ProjectCard = () => {
 
     return (
         <div>
-            <Box className="mt-[2rem]">
+            <Box className="my-[4rem]">
                 <Card className={isMobile ? "flex flex-col rounded-lg" : "flex rounded-lg"} size="2">
                     
                     <Inset className={isMobile ? "mb-[1rem]" : "mr-[2rem]"} clip="padding-box" side="left" pb="current">
@@ -51,7 +51,7 @@ const ProjectCard = () => {
                             <Text className="mt-[.5rem] text-xl">
                                 <Strong>{project.title}</Strong>
                             </Text>
-                            <Text as="p" className="my-[1rem] text-base">
+                            <Text as="p" className="mt-[.25rem] mb-[1rem] text-base">
                                 {project.description}
                             </Text>
                         </Flex>
@@ -62,7 +62,7 @@ const ProjectCard = () => {
                                 color="green"
                                 radius="large"
                                 variant="soft"
-                                className="rounded-md py-[.25rem] px-[.75rem]"
+                                className="rounded-md py-[.25rem] px-[.75rem] text-sm"
                             >
                                 {project.status}
                             </Badge>

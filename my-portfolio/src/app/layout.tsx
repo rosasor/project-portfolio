@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import { Geist, Geist_Mono } from "next/font/google"
 import { ThemeProvider } from "./contexts/ThemeContext"
+import ProgressBar from "@/components/ProgressBar"
 import NavBar from "@/components/NavigationMenu"
 import Footer from "@/components/Footer"
 import "./styles/globals.css"
@@ -38,6 +39,7 @@ export default function RootLayout({
             disableTransitionOnChange={true}
 
         >
+          <ProgressBar />
           <div className="flex flex-col max-w-[800px]" >
             <nav>
               <NavBar />

@@ -5,6 +5,8 @@ import * as React from "react"
 import { Moon, Sun } from "lucide-react"
 import { useTheme } from "next-themes"
 import { useCallback, useEffect } from "react";
+import { motion } from "framer-motion";
+
 
 
 const ThemeToggle = () => {
@@ -24,18 +26,20 @@ const ThemeToggle = () => {
     const isDark = resolvedTheme === "dark"
 
     return (
-      <Toggle.Root
-        pressed={isDark}
-        onPressedChange={handleThemeChange}
-        aria-label="Toggle dark mode"
-        className="flex size-[35px] items-center justify-center rounded-full bg-background text-black dark:data-[state=on]:bg-background dark:data-[state=on]:text-white"
-      >
-        {isDark ? (
-          <Sun className="h-4 w-4" />
-        ) : (
-          <Moon className="h-4 w-4" />
-        )}
-      </Toggle.Root>
+      <motion.div>
+        <Toggle.Root
+          pressed={isDark}
+          onPressedChange={handleThemeChange}
+          aria-label="Toggle dark mode"
+          className="flex size-[35px] items-center justify-center rounded-full bg-background text-black dark:data-[state=on]:bg-background dark:data-[state=on]:text-white"
+        >
+          {isDark ? (
+            <Sun className="h-4 w-4" />
+          ) : (
+            <Moon className="h-4 w-4" />
+          )}
+        </Toggle.Root>
+      </motion.div>
     )
   }
   
