@@ -26,7 +26,15 @@ const ThemeToggle = () => {
     const isDark = resolvedTheme === "dark"
 
     return (
-      <motion.div>
+      <motion.div
+        whileHover={{
+          scale: 1.1,
+          // Will be used when gesture starts
+          transition: { duration: 0.1 }
+        }}
+        // Will be used when gesture ends
+        transition={{ duration: 0.5 }}
+      >
         <Toggle.Root
           pressed={isDark}
           onPressedChange={handleThemeChange}

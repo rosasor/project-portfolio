@@ -1,6 +1,8 @@
+"use client"
 import React from "react";
 import Link from "next/link"
 import { GitHubLogoIcon, LinkedInLogoIcon, EnvelopeClosedIcon } from "@radix-ui/react-icons"
+import { motion } from "framer-motion";
 
 const Footer = () => {
     return (
@@ -21,13 +23,24 @@ const Footer = () => {
                     rel="noopener noreferrer"
                     className=""
                     >
+                        <motion.div
+                            className="text-white"
+                            whileHover={{
+                                color: "#00ffff",
+                                
+                                // Will be used when gesture starts
+                                transition: { duration: .1 }
+                              }}
+                              // Will be used when gesture ends
+                              transition={{ duration: 0.5 }}
+                        >
                         <LinkedInLogoIcon
                             aria-hidden
                             width={18}
                             height={18}
                             href="https://www.linkedin.com/in/rosawheelen/"
-                            className="transition-colors hover:text-blue-500"
                         />
+                        </motion.div>
                 </Link>
 
                 {/* GitHub */}
