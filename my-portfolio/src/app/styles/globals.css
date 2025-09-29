@@ -1,9 +1,24 @@
+@layer tw_base, radix_ui, tw_components_utils;
+@import "@radix-ui/themes/styles.css" layer(radix_ui);
 @import "tailwindcss";
+
+@layer tw_base {
+  @tailwind base;
+}
+
+@layer tw_components_utils {
+  @tailwind components;
+  @tailwind utilities;
+}
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
 }
+ /* .dark {
+  --background: #171717;
+  --foreground: #ffffff;
+ } */
 
 @theme inline {
   --color-background: var(--background);
@@ -12,12 +27,7 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+/* @custom-variant dark (&:where(.dark, .dark *)); */
 
 body {
   background: var(--background);

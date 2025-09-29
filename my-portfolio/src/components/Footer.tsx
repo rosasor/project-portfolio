@@ -1,6 +1,5 @@
 import React from "react";
 import Link from "next/link"
-import Image from "next/image";
 import { GitHubLogoIcon, LinkedInLogoIcon, EnvelopeClosedIcon } from "@radix-ui/react-icons"
 
 const Footer = () => {
