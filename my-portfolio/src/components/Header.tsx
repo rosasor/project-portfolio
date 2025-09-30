@@ -1,5 +1,5 @@
 import HeroAvatar from "@/components/ui/Avatar";
-import { Text, Flex, Heading } from "@radix-ui/themes"
+import { Text, Flex, Heading } from "@radix-ui/themes";
 
 
 const Header = () => {
@@ -10,7 +10,7 @@ const Header = () => {
 
             <Flex as="div" direction="column" className="my-2">
                 <Heading as="h1" className="text-4xl font-bold">
-                    Hello I'm Elena Rosa
+                    Hello I&apos;m Elena Rosa
                 </Heading>
                 <Text>
                     World
@@ -18,7 +18,6 @@ const Header = () => {
             </Flex>
         </Flex>
         </>
-
     )
 }
 
