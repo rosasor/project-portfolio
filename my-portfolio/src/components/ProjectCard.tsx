@@ -30,7 +30,7 @@ const ProjectCard = () => {
 
 
     return (
-        <div>
+        <div className="items-center mx-auto max-sm:w-[90%] sm:w-[90%] md:w-full">
             <Box className="my-[4rem]">
                 <Card className={isMobile ? "flex flex-col rounded-lg" : "flex rounded-lg"} size="2">
                     

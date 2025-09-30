@@ -27,6 +27,11 @@
   --font-mono: var(--font-geist-mono);
 }
 
+@theme {
+  --breakpoint-xs: 24rem;
+}
+
+
 @custom-variant dark (&:where(.dark, .dark *));
 
 body {

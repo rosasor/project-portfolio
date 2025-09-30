@@ -18,24 +18,22 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>      
       <body 
-        className={`flex flex-col items-center min-h-screen p-8 overscroll-none antialiased`}
+        className={`flex flex-col items-center min-h-screen mt-24 p-3 xs:p-8 overscroll-none antialiased`}
       >
-
-      <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange={true}
-
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange={true}
         >
           <ProgressBar />
           <div className="flex flex-col max-w-[800px]" >
             <nav>
               <NavBar />
             </nav>
-
-              {children}
-
+              <main className="flex flex-col gap-4 mx-auto px-4 justify-center items-center">
+                {children}
+              </main>
             <footer>
               <Footer />
             </footer>

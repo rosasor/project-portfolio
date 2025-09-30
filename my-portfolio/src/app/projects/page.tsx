@@ -1,21 +1,24 @@
 import ProjectCard from "@/components/ProjectCard"
+import { Box, Card, Inset, Text, Strong, Flex, Badge, Heading } from "@radix-ui/themes"
+
 
 export default function Projects() {
     return (
         <div>
-            <main className="flex flex-col my-[4rem] px-[2rem] min-h-screen">
-                <header className="">
-                    <h1 className="text-4xl font-bold">Hello</h1>
-                </header>
+            <Flex className="justify-center">
+                <Heading as="h1" className="text-3xl text-center font-bold">
+                    Hello
+                </Heading>
+            </Flex>
 
 
-                {/* Project Card */}
-                <section className="">
-                    <ProjectCard />
-                    <ProjectCard />
-                    <ProjectCard />
-                </section>
-            </main>
+
+            {/* Project Card */}
+            <section className="">
+                <ProjectCard />
+                <ProjectCard />
+                <ProjectCard />
+            </section>
         </div>
     )
 }
