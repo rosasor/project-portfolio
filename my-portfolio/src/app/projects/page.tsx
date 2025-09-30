@@ -1,5 +1,5 @@
 import ProjectCard from "@/components/ProjectCard"
-import { Box, Card, Inset, Text, Strong, Flex, Badge, Heading } from "@radix-ui/themes"
+import { Flex, Heading } from "@radix-ui/themes"
 
 
 export default function Projects() {

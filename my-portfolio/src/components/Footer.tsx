@@ -1,4 +1,5 @@
 "use client"
+
 import React from "react";
 import Link from "next/link"
 import { GitHubLogoIcon, LinkedInLogoIcon, EnvelopeClosedIcon } from "@radix-ui/react-icons"
@@ -90,7 +91,6 @@ const Footer = () => {
                             className="text-black dark:text-white transition-colors hover:text-violet-500"
                         />
                     </motion.div>
-
                 </Link>
             </div>
       </footer>

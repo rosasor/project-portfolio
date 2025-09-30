@@ -6,8 +6,8 @@ import Footer from "@/components/Footer"
 import "./styles/globals.css"
 
 export const metadata: Metadata = {
-  title: "Hello, World!",
-  description: "Bye",
+  title: "Elena the FED!",
+  description: "Frontend Developer Portfolio",
 };
 
 export default function RootLayout({
@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>      
       <body 
-        className={`flex flex-col items-center min-h-screen mt-24 p-3 xs:p-8 overscroll-none antialiased`}
+        className={`flex flex-col items-center min-h-screen mt-24 p-3 xs:p-8 overscroll-none antialiased selection:bg-violet-300 selection:text-violet-900`}
       >
         <ThemeProvider
           attribute="class"

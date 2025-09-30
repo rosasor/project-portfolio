@@ -1,4 +1,3 @@
-import ProjectCard from "@/components/ProjectCard";
 import Header from "@/components/Header";
 
 export default function Home() {
