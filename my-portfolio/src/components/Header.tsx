@@ -3,6 +3,7 @@
 import HeroAvatar from "@/components/ui/Avatar";
 import { Text, Flex, Heading, Badge } from "@radix-ui/themes";
 import SocialIcons from "./ui/SocialIcons";
+import { motion } from "framer-motion";
 
 
 const Header = () => {
@@ -25,10 +26,27 @@ const Header = () => {
                     <Flex gap="1rem">
                         
                         <Badge size="1" color="cyan" className="px-3 py-1 rounded-lg gap-2">
-                            <span className="relative flex size-3">
-                                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-cyan-400 opacity-75"></span>
-                                <span className="relative inline-flex size-3 rounded-full bg-cyan-500"></span>
+                            
+                        
+                            <span className="relative flex size-2">
+                                <motion.span
+                                    className="absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"
+                                    animate={{
+                                        scale: [1, 1.5, 1],
+                                        opacity: [0.7, 0, 0.7],
+                                    }}
+                                    transition={{
+                                        duration: 2,
+                                        repeat: Infinity,
+                                        repeatType: "loop",
+                                    }}
+                                >
+                                </motion.span>
+                                <span className="relative inline-flex size-2 rounded-full bg-cyan-500"></span>
+
                             </span>
+
+
                             <Text as="span" className="select-none">
                                 Open to new opportunities
                             </Text>
