@@ -1,4 +1,5 @@
 import ProjectCard from "@/components/ProjectCard";
+import Header from "@/components/Header";
 
 export default function Home() {
   return (
@@ -8,8 +9,7 @@ export default function Home() {
 
         </div>
         <header className="">
-          
-          <h1 className="text-4xl font-bold">Hello</h1>
+          <Header />
         </header>
 
 

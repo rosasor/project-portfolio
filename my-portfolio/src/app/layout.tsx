@@ -1,20 +1,10 @@
 import type { Metadata } from "next"
 import { Geist, Geist_Mono } from "next/font/google"
 import { ThemeProvider } from "./contexts/ThemeContext"
-import ProgressBar from "@/components/ProgressBar"
+import ProgressBar from "@/components/ui/ProgressBar"
 import NavBar from "@/components/NavigationMenu"
 import Footer from "@/components/Footer"
 import "./styles/globals.css"
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "Hello, World!",
@@ -29,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>      
       <body 
-        className={`flex flex-col items-center min-h-screen p-8 overscroll-none ${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`flex flex-col items-center min-h-screen p-8 overscroll-none antialiased`}
       >
 
       <ThemeProvider

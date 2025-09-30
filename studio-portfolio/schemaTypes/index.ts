@@ -1,2 +1,3 @@
 import { eventType } from "./eventType";
-export const schemaTypes = [eventType]
+import { projectType } from "./projectType";
+export const schemaTypes = [eventType, projectType]
