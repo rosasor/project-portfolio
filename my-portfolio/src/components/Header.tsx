@@ -1,5 +1,5 @@
 import HeroAvatar from "@/components/ui/Avatar";
-import { Box, Card, Inset, Text, Strong, Flex, Badge, Heading } from "@radix-ui/themes"
+import { Text, Flex, Heading } from "@radix-ui/themes"
 
 
 const Header = () => {

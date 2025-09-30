@@ -3,7 +3,6 @@
 import React, { useEffect, useState } from "react"
 import { Box, Card, Inset, Text, Strong, Flex, Badge } from "@radix-ui/themes"
 import Link from "next/link"
-import Image from "next/image"
 import { ExternalLinkIcon } from "@radix-ui/react-icons"
 
 
