@@ -2,9 +2,7 @@
 
 import HeroAvatar from "@/components/ui/Avatar";
 import { Text, Flex, Heading, Badge } from "@radix-ui/themes";
-import Link from "next/link";
-import { GitHubLogoIcon, LinkedInLogoIcon, EnvelopeClosedIcon } from "@radix-ui/react-icons"
-import { motion } from "framer-motion";
+import SocialIcons from "./ui/SocialIcons";
 
 
 const Header = () => {
@@ -31,85 +29,12 @@ const Header = () => {
                                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-cyan-400 opacity-75"></span>
                                 <span className="relative inline-flex size-3 rounded-full bg-cyan-500"></span>
                             </span>
-                            <Text as="span">
+                            <Text as="span" className="select-none">
                                 Open to new opportunities
                             </Text>
                         </Badge>
                     </Flex>
-                        <Flex gap="1rem">
-                            <Link 
-                                href={"https://www.linkedin.com/in/rosawheelen/"} 
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className=""
-                                >
-                                    <motion.div
-                                        className="text-white"
-                                        whileHover={{
-                                            scale: 1.1,
-                                            transition: { duration: .1 }
-                                        }}
-                                        transition={{ duration: 0.1 }}
-                                    >
-                                        <LinkedInLogoIcon
-                                            aria-hidden
-                                            width={18}
-                                            height={18}
-                                            href="https://www.linkedin.com/in/rosawheelen/"
-                                            className="text-black dark:text-white transition-colors hover:text-violet-500"
-                                            />
-                                    </motion.div>
-                            </Link>
-
-                            <Link 
-                                href={"https://www.github.com/rosasor/"} 
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className=""
-                            >
-                                <motion.div
-                                    className="text-white"
-                                    whileHover={{
-                                        scale: 1.1,
-                                        transition: { duration: .1 }
-                                        }}
-                                        transition={{ duration: 0.1 }}
-                                >
-                                    <GitHubLogoIcon
-                                        aria-hidden
-                                        width={18}
-                                        height={18}
-                                        href="https://www.github.com/rosasor/"
-                                        className="text-black dark:text-white transition-colors hover:text-violet-500"
-                                    />
-                                </motion.div>
-                            </Link>
-
-                            <Link 
-                                href={""} 
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className=""
-                            >
-                                <motion.div
-                                    className="text-white"
-                                    whileHover={{
-                                        scale: 1.1,
-                                        transition: { duration: .1 }
-                                        }}
-                                        transition={{ duration: 0.1 }}
-                                >
-
-                                    <EnvelopeClosedIcon
-                                        aria-hidden
-                                        width={18}
-                                        height={18}
-                                        href="/"
-                                        className="text-black dark:text-white transition-colors hover:text-violet-500"
-                                    />
-                                </motion.div>
-                            </Link>
-                        </Flex>
+                    <SocialIcons />
                     </Flex>
                 </Flex>
             </Flex>

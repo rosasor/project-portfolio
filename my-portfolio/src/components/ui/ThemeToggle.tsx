@@ -35,7 +35,7 @@ const ThemeToggle = () => {
           pressed={isDark}
           onPressedChange={handleThemeChange}
           aria-label="Toggle dark mode"
-          className="flex items-center justify-center rounded-full text-black transition-colors hover:text-violet-500 dark:hover:data-[state=on]:text-violet-500 dark:data-[state=on]:text-white"
+          className="flex items-center justify-center rounded-full text-black transition-colors hover:text-violet-600 dark:hover:data-[state=on]:text-violet-400 dark:data-[state=on]:text-white"
         >
           {isDark ? (
             <Sun 

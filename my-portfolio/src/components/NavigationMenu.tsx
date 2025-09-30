@@ -30,11 +30,11 @@ const NavBar = () => {
                 <motion.div>
                 <Link
                   href={link.href}
-                  className={`font-medium text-[.9rem] py-3 transition-colors
+                  className={`font-medium text-[.9rem] py-3 transition-colors select-none
                     ${
                       isActive
                         ? "text-black dark:text-white"
-                        : "text-neutral-500 dark:text-neutral-400 hover:text-violet-500 focus:text-black focus:dark:text-white"
+                        : "text-neutral-500 dark:text-neutral-400 hover:text-violet-600 dark:hover:text-violet-400 focus:text-black focus:dark:text-white"
                     }`}
                 >
                   {link.label}
