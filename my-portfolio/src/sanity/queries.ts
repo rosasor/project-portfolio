@@ -16,8 +16,7 @@ const projectFields = /* groq */ `
   coverImage,
   "date": coalesce(date, _updatedAt),
 `
-
-// Query to get all the data for a project card, this is used for the project card component
+// Query to get all the data for a the project card component
 export const allProjectsQuery = defineQuery(`
     *[_type == "project" && defined(slug.current)] | order(date desc, _updatedAt desc) {
         ${projectCardFields}
