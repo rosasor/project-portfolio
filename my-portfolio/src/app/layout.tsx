@@ -4,6 +4,7 @@ import ProgressBar from "@/components/ui/ProgressBar"
 import NavBar from "@/components/NavigationMenu"
 import Footer from "@/components/Footer"
 import "./styles/globals.css"
+import { Box } from "@radix-ui/themes"
 
 export const metadata: Metadata = {
   title: "Elena the FED!",
@@ -18,10 +19,12 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>      
       <body 
-        className={`flex flex-col items-center min-h-screen mt-24 p-3 xs:p-8 overscroll-none antialiased selection:bg-violet-300 selection:text-violet-900`}
+        className={`min-h-screen mt-24 overscroll-none antialiased selection:bg-violet-300 selection:text-violet-900`}
       >
+        <Box className="w-full max-w-[830px] xl:max-w-[1024px] md:w-[80%] xl:w-full mx-auto px-6 xs:px-8 lg:px-8 sm:gap-16 pt-10">
+        
         {/* Dot Grid background */}
-        <div
+        <Box
           className="pointer-events-none fixed inset-0 -z-10
                      bg-neutral-50 dark:bg-neutral-900
                      bg-[radial-gradient(#e5e7eb_1px,transparent_1px)]
@@ -35,18 +38,20 @@ export default function RootLayout({
           disableTransitionOnChange={true}
         >
           <ProgressBar />
-          <div className="flex flex-col max-w-[800px]" >
+          <Box as="div" className="" >
             <nav>
               <NavBar />
             </nav>
-              <main className="flex flex-col gap-4 mx-auto px-4 justify-center items-center">
+              <main className="">
                 {children}
-              </main>
-            <footer>
+                <footer>
               <Footer />
             </footer>
-          </div>
+              </main>
+            
+          </Box>
         </ThemeProvider>
+        </Box>
       </body>
     </html>
   );
