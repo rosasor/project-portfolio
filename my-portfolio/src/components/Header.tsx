@@ -17,12 +17,12 @@ const Header = () => {
                     Hi&#x2c; I&apos;m Elena Rosa  &mdash;<br></br>
                     Frontend Engineer
                 </Heading>
-                <Text as="p" align="center" className="my-6 w-[80%] sm:w-[60%] md:w-[65%] text-base text-neutral-700 dark:text-neutral-200">
+                <Text as="p" align="center" className="my-6 w-[90%] sm:w-[60%] md:w-[65%] text-base text-neutral-700 dark:text-neutral-200">
                     Frontend Developer skilled in JavaScript&#x2c; React&#x2c; TypeScript&#x2c; 
                     and Next.js&#x2c; with a background in UX/UI engineering&#46;
 
                 </Text>
-                <Flex direction="column" align="center" gap="1rem" className="md:flex-row mb-100">
+                <Flex direction="column" align="center" gap="1rem" className="md:flex-row mb-10">
                     <Flex gap="1rem">
                         
                         <Badge size="1" color="cyan" className="px-3 py-1 rounded-lg gap-2">
