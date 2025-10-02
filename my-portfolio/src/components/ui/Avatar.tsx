@@ -1,14 +1,20 @@
 import * as React from "react";
 import { Avatar } from "radix-ui";
 
+//on click, toast "elena says hello"
 
-const HeroAvatar = () => (	
+const HeroAvatar = () => (
+	
 	<div className="flex gap-5 pt-8">
-		<Avatar.Root className="inline-flex max-w-30 w-full h-auto min-w-30 min-h-40 select-none items-center justify-center overflow-hidden rounded-full bg-background align-middle outline-neutral-100 dark:outline-neutral-600 outline-1 outline-offset-3">
+		<Avatar.Root 
+			className="inline-flex max-w-30 w-full h-auto min-w-30 min-h-40 select-none items-center 
+			justify-center overflow-hidden rounded-full bg-background align-middle outline-neutral-100 
+			dark:outline-neutral-600 outline-1 outline-offset-3 hover:scale-105 transition-all duration-500 hover:rotate-2
+			cursor-pointer">
 			<Avatar.Image
-				className="size-full rounded-[inherit] object-cover "
-				src="https://media.licdn.com/dms/image/v2/D4E03AQGLgYsujM8Fgw/profile-displayphoto-crop_800_800/B4EZlz_yVwGYAI-/0/1758587745857?e=1762387200&v=beta&t=bsx6qCOJPteycAxuaUC6dZDAMflXXA8sllVxKHUur1I"
-				alt="Colm Tuite"
+				className="size-full rounded-[inherit] object-cover"
+				src="/Elena_Headshot.svg"
+				alt="Elena Rosa Wheelen"
 			/>
 			<Avatar.Fallback
 				className="leading-1 flex size-full items-center justify-center bg-white text-[15px] font-medium text-violet11"
@@ -16,6 +22,7 @@ const HeroAvatar = () => (
 			>
 				ELENA
 			</Avatar.Fallback>
+			
 		</Avatar.Root>
 	</div>
 );

@@ -10,7 +10,7 @@ const AboutPreview = () => {
                         About Me
                     </Heading>
                     <Text as="p" className="text-neutral-700 dark:text-neutral-200">
-                        Front&ndash;end Developer with a strong UX&#47;UI design foundation and hands&ndash;on experience building full&ndash;stack applications 
+                        Frontend Developer with a strong UX&#47;UI design foundation and hands&ndash;on experience building full&ndash;stack applications 
                         using React&#x2c; TypeScript&#x2c; and Python&#46; Brings a visual&ndash;first approach to frontend development&#x2c; 
                         paired with real&ndash;world production experience and an eye for pixel&ndash;perfect detail&#46;
                     </Text>
