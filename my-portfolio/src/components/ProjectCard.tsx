@@ -1,6 +1,5 @@
 "use client"
 
-import React, { useEffect, useState } from "react"
 import { Box, Card, Inset, Text, Strong, Flex, Badge, Button } from "@radix-ui/themes"
 import Link from "next/link"
 import { ExternalLinkIcon } from "@radix-ui/react-icons"
@@ -17,30 +16,18 @@ const project = {
 
 
 const ProjectCard = () => {
-    const [isMobile, setIsMobile] = useState(false);
-
-    useEffect(() => {
-        const handleResize = () => {
-            setIsMobile(window.innerWidth < 768);
-        };
-
-        window.addEventListener('resize', handleResize);
-        handleResize();
-    }, []);
-
-
     return (
         <Box as="div" className="mb-12 sm:mb-16">
             <Flex className="justify-center">
-                <Card className="flex flex-col sm:max-md:w-[80%] lg:flex-row">
-                    <Inset side="left" pb="current" className="h-full">
+                <Card className="flex flex-col sm:max-md:w-[80%] lg:max-w-full lg:flex-row">
+                    <Inset side="left" pb="current" className="h-full lg:max-w-[50%]">
                         <img
                             src={project.imageUrl}
                             alt="Bold typography"
-                            className="w-full max-lg:max-h-50 lg:max-h-100 object-cover rounded-lg"
+                            className="w-full max-lg:max-h-50  lg:max-h-60 object-cover rounded-lg"
                         />
                     </Inset>
-                    <Flex as="div" direction="column" justify="between" className="lg:ml-4 flex">
+                    <Flex as="div" direction="column" justify="between" className="lg:ml-4 flex lg:max-w-[60%]">
 
                         <Flex as="div" direction="column" className="">
                             <Text as="span" className="mt-3 lg:mt-1 text-base">
@@ -52,7 +39,7 @@ const ProjectCard = () => {
                             <Text as="p" className="mt-2 mb-1 text-base">
                                 {project.description}
                             </Text>
-                            <Button className="justify-start py-2 mb-4 gap-4 text-neutral-700 dark:text-neutral-200 hover:underline hover:text-violet-600 dark:hover:text-violet-400">
+                            <Button className="justify-start my-2 text-neutral-700 dark:text-neutral-200 hover:underline hover:text-violet-600 dark:hover:text-violet-400">
                                 <Link 
                                 href={"/projects"} 
                                 rel="noopener noreferrer"
@@ -64,7 +51,7 @@ const ProjectCard = () => {
                         </Flex>
                         
 
-                        <Flex as="div" className="mb-1 justify-between items-center">
+                        <Flex as="div" className="my-1 justify-between items-center">
                             <Badge 
                                 color="green"
                                 radius="large"

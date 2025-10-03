@@ -21,7 +21,7 @@ export default function RootLayout({
       <body 
         className={`min-h-screen mt-24 overscroll-none antialiased selection:bg-violet-300 selection:text-violet-900`}
       >
-        <Box className="w-full max-w-[830px] xl:max-w-[1024px] md:w-[80%] xl:w-full mx-auto px-6 xs:px-8 lg:px-8 sm:gap-16 pt-10">
+        <Box className="w-full max-w-[830px] md:w-[80%] xl:w-full mx-auto px-6 xs:px-8 lg:px-8 sm:gap-16 pt-10">
         
         {/* Dot Grid background */}
         <Box

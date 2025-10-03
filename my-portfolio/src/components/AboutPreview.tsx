@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const AboutPreview = () => {
     return (
-        <Box className="mx-auto flex justify-center items-center my-8 mb-24 w-full md:max-w-[70%]">
+        <Box className="mx-auto flex justify-center items-center my-8 mb-24 w-full md:max-w-[80%]">
             <Flex direction="column" className="gap-8">
                 <Section>
                     <Heading as="h3" className="text-2xl font-bold mb-2 text-neutral-800 dark:text-neutral-200">

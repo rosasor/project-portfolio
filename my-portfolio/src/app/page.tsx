@@ -1,8 +1,13 @@
 "use client"
-import ImageCarousel from "@/components/ImageCarousel";
 import AboutPreview from "@/components/AboutPreview";
 import Header from "@/components/Header";
 import { motion } from "framer-motion";
+import EmblaCarousel from '@/components/EmblaCarousel'
+import { EmblaOptionsType } from 'embla-carousel'
+
+// const OPTIONS: EmblaOptionsType = { loop: true }
+// const SLIDE_COUNT = 8
+// const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
 
 export default function Home() {
   return (
@@ -18,7 +23,8 @@ export default function Home() {
       <header className="">
         <Header />
       </header>
-      <ImageCarousel />
+      <EmblaCarousel />
+
       <AboutPreview />
       </motion.div>
     </div>

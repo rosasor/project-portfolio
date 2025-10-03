@@ -6,7 +6,7 @@ import { Flex } from "@radix-ui/themes";
 
 const Footer = () => {
     return (
-        <footer className="mb-4">
+        <footer className="mb-8">
             <Flex className="flex-col-reverse justify-center items-center gap-4 xs:flex-row">
                 <span className="text-sm">
                     © 2025 Elena Rosa Wheelen
