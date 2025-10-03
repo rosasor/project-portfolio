@@ -1,5 +1,5 @@
-import ProjectCard from "@/components/ProjectCard"
 import { Box, Section, Flex, Heading } from "@radix-ui/themes"
+import ProjectsList from "@/components/ProjectsList";
 
 
 export default function Projects() {
@@ -15,9 +15,7 @@ export default function Projects() {
 
             {/* Project Card */}
             <Section className="mt-8">
-                <ProjectCard />
-                <ProjectCard />
-                <ProjectCard />
+                <ProjectsList />
             </Section>
         </Box>
     )

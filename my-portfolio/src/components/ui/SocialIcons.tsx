@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 const SocialIcons = () => {
     return (
-            <div className="flex gap-[1rem]">
+            <div className="flex gap-2">
 
                 {/* LinkedIn */}
                 <Link 
@@ -17,12 +17,15 @@ const SocialIcons = () => {
                     className=""
                     >
                         <motion.div
-                            className="text-white"
+                            className="p-1 rounded-lg bg-none hover:bg-neutral-200 dark:hover:bg-neutral-700
+                        transition-colors hover:text-violet-600 dark:hover:text-violet-400"
+                            initial={{
+                                rotate:0
+                            }}
                             whileHover={{
                                 scale: 1.1,
-                                transition: { duration: .1 }
+                                rotate: -10,
                               }}
-                              transition={{ duration: 0.1 }}
                         >
                             <LinkedInLogoIcon
                                 aria-hidden
@@ -42,12 +45,15 @@ const SocialIcons = () => {
                     className=""
                 >
                     <motion.div
-                        className="text-white"
+                        className="p-1 rounded-lg bg-none hover:bg-neutral-200 dark:hover:bg-neutral-700
+                        transition-colors hover:text-violet-600 dark:hover:text-violet-400"
+                        initial={{
+                            rotate:0
+                        }}
                         whileHover={{
                             scale: 1.1,
-                            transition: { duration: .1 }
-                            }}
-                            transition={{ duration: 0.1 }}
+                            rotate: 5,
+                          }}
                     >
                         <GitHubLogoIcon
                             aria-hidden
@@ -67,12 +73,16 @@ const SocialIcons = () => {
                     className=""
                 >
                     <motion.div
-                        className="text-white"
+                        className="p-1 rounded-lg 
+                        bg-none hover:bg-neutral-200 dark:hover:bg-neutral-700
+                        transition-colors hover:text-violet-600 dark:hover:text-violet-400"
+                        initial={{
+                            rotate:0
+                        }}
                         whileHover={{
                             scale: 1.1,
-                            transition: { duration: .1 }
-                            }}
-                            transition={{ duration: 0.1 }}
+                            rotate: 10,
+                          }}
                     >
 
                         <EnvelopeClosedIcon

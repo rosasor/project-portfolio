@@ -25,11 +25,16 @@ const ThemeToggle = () => {
 
     return (
       <motion.div
+        className="p-1 rounded-full 
+          bg-none hover:bg-neutral-200 dark:hover:bg-neutral-700
+          transition-colors hover:text-violet-600 dark:hover:text-violet-400"
+        initial={{
+          rotate: 0
+        }}
         whileHover={{
           scale: 1.1,
-          transition: { duration: 0.1 }
+          rotate: 10,
         }}
-        transition={{ duration: 0.1 }}
       >
         <Toggle.Root
           pressed={isDark}
