@@ -24,7 +24,7 @@ const EmblaCarousel = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel({ watchDrag: false, loop: true}, [
     AutoScroll({
       playOnInit: true,
-      speed: 1.5,
+      speed: .6,
       stopOnFocusIn: false,
       stopOnInteraction: false,
       stopOnMouseEnter: true,

@@ -6,14 +6,16 @@ import { Flex } from "@radix-ui/themes";
 
 const Footer = () => {
     return (
-        <footer className="mb-8">
+        <footer className="mb-8" role="contentinfo" aria-label="Site footer">
             <Flex className="flex-col-reverse justify-center items-center gap-4 xs:flex-row">
-                <span className="text-sm">
+                <p className="text-sm" aria-label="Copyright information">
                     © 2025 Elena Rosa Wheelen
-                </span>
-                <SocialIcons />
+                </p>
+                <nav aria-label="Social media links">
+                    <SocialIcons />
+                </nav>
             </Flex>
-      </footer>
+        </footer>
     )
 }
 

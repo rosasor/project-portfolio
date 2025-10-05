@@ -1,16 +1,34 @@
+// import Link from "next/link";
+// import { type SanityDocument } from "next-sanity";
+// import { client } from "@/sanity/client";
+import { Box } from "@radix-ui/themes";
+import AboutHeader from "@/components/AboutHeader";
 
 
-export default function About() {
+// const PEOJECTS_QUERY = `*[
+//   _type == "project"
+//   && defined(slug.current)
+// ]|order(publishedAt desc)[0...12]{_id, title, slug, publishedAt}`;
+
+// const options = { next: { revalidate: 30 } };
+
+export default async function About() {
+    // const projects = await client.fetch<SanityDocument[]>(PEOJECTS_QUERY, {}, options);
+
     return (
-        <div>
-            <main className="flex flex-col my-[4rem] px-[2rem] min-h-screen">
-                <header className="">
-                    <h1 className="text-4xl font-bold">Hello</h1>
-                </header>
+        <Box className="">
+            <AboutHeader />
 
-                <section className="">
-                </section>
-            </main>
-        </div>
+            {/* <Section className="">
+                <ul className="flex flex-col gap-y-4">
+                    {projects.map((project) => (
+                        <li className="hover:underline" key={project._id}>
+                            <h2 className="text-xl font-semibold">{project.title}</h2>
+                            <p>{new Date(project.publishedAt).toLocaleDateString()}</p>
+                        </li>
+                    ))}
+                </ul>
+            </Section> */}
+        </Box>
     )
 }

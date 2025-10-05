@@ -18,11 +18,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, isImageLeft }) => {
                 <Card className={`flex flex-col sm:max-md:w-[80%] lg:max-w-full 
                     ${isImageLeft ? "lg:flex-row" : "lg:flex-row-reverse"}`}
                 >
-                    <Inset side="left" pb="current" className="max-h-50 lg:max-w-[50%] min-w-[50%]">
+                    <Inset side="left" pb="current" className="max-h-50 lg:max-w-[48%] min-w-[48%]">
                         <img
                             src={project.imageUrl}
                             alt={project.title}
-                            className="w-full h-full object-cover rounded-lg"
+                            className="w-full h-full object-cover rounded-lg bg-none select-none"
                         />
                     </Inset>
                     <Flex as="div" direction="column" className={`flex justify-around lg:max-w-[60%]"
@@ -30,10 +30,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, isImageLeft }) => {
                     >
 
                         <Flex as="div" direction="column" className="">
-                            <Text as="span" className="mt-3 lg:mt-1 text-sm">
+                            <Text as="span" className="mt-4 lg:mt-1 text-sm">
                                 {project.year}
                             </Text>
-                            <Text className="mt-1 text-xl">
+                            <Text className="mt-3 text-xl">
                                 <Strong>{project.title}</Strong>
                             </Text>
                             <Flex>
@@ -57,17 +57,17 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, isImageLeft }) => {
                             {project.status === "Live" && (
                                 <Flex className="my-1 gap-2 items-center">
                                     <Badge 
-                                        color="green"
+                                        color="cyan"
                                         radius="large"
                                         variant="soft"
-                                        className="rounded-md py-1 px-3 text-xs"
+                                        className="rounded-md py-1 px-3 text-xs select-none"
                                     >
                                         {project.status}
                                     </Badge>
                                 
 
                                     <Link
-                                        href={""} 
+                                        href={project.link}
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className=""
@@ -76,7 +76,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, isImageLeft }) => {
                                             aria-hidden
                                             width={18}
                                             height={18}
-                                            href="/"
+                                            href={project.link}
                                             className="transition-colors hover:text-violet-600 dark:hover:text-violet-400"
                                         /> 
                                     </Link>

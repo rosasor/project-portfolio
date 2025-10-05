@@ -9,7 +9,7 @@ const HeroAvatar = () => (
 		<Avatar.Root 
 			className="inline-flex max-w-30 w-full h-auto min-w-30 min-h-40 select-none items-center 
 			justify-center overflow-hidden rounded-full bg-background align-middle outline-neutral-100 
-			dark:outline-neutral-600 outline-1 outline-offset-3 hover:scale-105 transition-all duration-500 hover:rotate-2
+			dark:outline-neutral-600 outline-1 outline-offset-3 hover:scale-105 transition-all duration-400 hover:rotate-2
 			cursor-pointer">
 			<Avatar.Image
 				className="size-full rounded-[inherit] object-cover"
@@ -17,7 +17,7 @@ const HeroAvatar = () => (
 				alt="Elena Rosa Wheelen"
 			/>
 			<Avatar.Fallback
-				className="leading-1 flex size-full items-center justify-center bg-white text-[15px] font-medium text-violet11"
+				className="leading-1 flex size-full items-center justify-center bg-neutral-500 text-[15px] font-medium text-violet11"
 				delayMs={600}
 			>
 				ELENA

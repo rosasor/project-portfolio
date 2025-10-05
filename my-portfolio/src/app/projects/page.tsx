@@ -1,17 +1,12 @@
-import { Box, Section, Flex, Heading } from "@radix-ui/themes"
+import { Box, Section } from "@radix-ui/themes"
 import ProjectsList from "@/components/ProjectsList";
+import ProjectsHeader from "@/components/ProjectsHeader";
 
 
 export default function Projects() {
     return (
         <Box className="">
-            <Flex className="">
-                <Heading as="h1" className="text-3xl font-bold">
-                    Hello Projects
-                </Heading>
-            </Flex>
-
-
+            <ProjectsHeader />
 
             {/* Project Card */}
             <Section className="mt-8">
