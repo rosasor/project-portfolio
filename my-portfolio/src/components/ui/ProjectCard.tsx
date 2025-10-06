@@ -44,7 +44,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, isImageLeft }) => {
                         </Flex>
                         
                         <Flex className="justify-between flex-row">
-                            <Button className="justify-start my-2 text-sm text-neutral-700 dark:text-neutral-200 hover:underline hover:text-violet-600 dark:hover:text-violet-400">
+                            <Button className="hidden justify-start my-2 text-sm text-neutral-700 dark:text-neutral-200 hover:underline hover:text-violet-600 dark:hover:text-violet-400">
                                 <Link 
                                     href={`/projects/` + project.slug} 
                                     rel="noopener noreferrer"
