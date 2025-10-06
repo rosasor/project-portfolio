@@ -14,7 +14,7 @@ type ProjectCardProps = {
 const ProjectCard: React.FC<ProjectCardProps> = ({ project, isImageLeft }) => {    
     return (
         <Box as="div" className="mb-12 sm:mb-16">
-            <Flex className="justify-center">
+            <Flex className="justify-center ">
                 <Card className={`flex flex-col sm:max-md:w-[80%] lg:max-w-full 
                     ${isImageLeft ? "lg:flex-row" : "lg:flex-row-reverse"}`}
                 >
@@ -33,11 +33,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, isImageLeft }) => {
                             <Text as="span" className="mt-4 lg:mt-1 text-sm">
                                 {project.year}
                             </Text>
-                            <Text className="mt-3 text-xl">
+                            <Text className="mt-3 text-xl text-neutral-800 dark:text-neutral-200">
                                 <Strong>{project.title}</Strong>
                             </Text>
                             <Flex>
-                            <Text as="p" className="mt-2 mb-1 text-sm line-clamp-3">
+                            <Text as="p" className="mt-2 mb-1 text-sm line-clamp-4">
                                 {project.description}
                             </Text>
                             </Flex>
@@ -46,7 +46,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, isImageLeft }) => {
                         <Flex className="justify-between flex-row">
                             <Button className="justify-start my-2 text-sm text-neutral-700 dark:text-neutral-200 hover:underline hover:text-violet-600 dark:hover:text-violet-400">
                                 <Link 
-                                    href={"/projects"} 
+                                    href={`/projects/` + project.slug} 
                                     rel="noopener noreferrer"
                                     className=""
                                 >
@@ -54,8 +54,19 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, isImageLeft }) => {
                                 </Link>
                             </Button>
 
-                            {project.status === "Live" && (
+                            
+
+                            {project.status === "Live" ? (
                                 <Flex className="my-1 gap-2 items-center">
+                                    <Badge 
+                                        color={project.tag === "In-Progress" ? "yellow" : project.tag === "Complete" ? "green" : "red"}
+                                        radius="large"
+                                        variant="soft"
+                                        className="rounded-md py-1 px-3 text-xs select-none"
+                                    >
+                                        {project.tag}
+                                    </Badge>
+
                                     <Badge 
                                         color="cyan"
                                         radius="large"
@@ -64,7 +75,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, isImageLeft }) => {
                                     >
                                         {project.status}
                                     </Badge>
-                                
 
                                     <Link
                                         href={project.link}
@@ -80,6 +90,17 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, isImageLeft }) => {
                                             className="transition-colors hover:text-violet-600 dark:hover:text-violet-400"
                                         /> 
                                     </Link>
+                                </Flex>
+                             ) : (
+                                <Flex className="my-1 gap-2 items-center">
+                                    <Badge 
+                                        color={project.tag === "In-Progress" ? "yellow" : project.tag === "Complete" ? "green" : "red"}
+                                        radius="large"
+                                        variant="soft"
+                                        className="rounded-md py-1 px-3 text-xs select-none"
+                                    >
+                                        {project.status}
+                                    </Badge>
                                 </Flex>
                              )}
                         </Flex>

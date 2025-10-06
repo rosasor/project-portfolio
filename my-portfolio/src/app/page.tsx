@@ -3,7 +3,7 @@ import AboutPreview from "@/components/AboutPreview";
 import Header from "@/components/Header";
 import { motion } from "framer-motion";
 import EmblaCarousel from '@/components/EmblaCarousel'
-import { EmblaOptionsType } from 'embla-carousel'
+// import { EmblaOptionsType } from 'embla-carousel'
 
 // const OPTIONS: EmblaOptionsType = { loop: true }
 // const SLIDE_COUNT = 8

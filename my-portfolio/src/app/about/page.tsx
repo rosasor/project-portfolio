@@ -3,6 +3,7 @@
 // import { client } from "@/sanity/client";
 import { Box } from "@radix-ui/themes";
 import AboutHeader from "@/components/AboutHeader";
+import AboutDetails from "@/components/AboutDetails";
 
 
 // const PEOJECTS_QUERY = `*[
@@ -18,6 +19,7 @@ export default async function About() {
     return (
         <Box className="">
             <AboutHeader />
+            <AboutDetails />
 
             {/* <Section className="">
                 <ul className="flex flex-col gap-y-4">

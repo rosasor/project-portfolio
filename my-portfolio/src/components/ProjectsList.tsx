@@ -5,8 +5,8 @@ import { Box, Flex } from "@radix-ui/themes";
 
 const App: React.FC = () => {
   return (
-    <Box as="div" className="mb-12 sm:mb-16">
-        <Flex direction="column" className="justify-center">
+    <Box as="div" className="">
+        <Flex direction="column" className="justify-center gap-8">
                 {project.map((project, index) => (
                     <ProjectCard
                         key={project.id}

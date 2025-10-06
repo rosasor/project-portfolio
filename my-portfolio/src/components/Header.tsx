@@ -14,10 +14,10 @@ const Header = () => {
             <Flex as="div" direction="column" align="center" className="">
                 <Heading as="h1" className="mt-3 text-3xl sm:text-4xl md:text-5xl/13 text-center font-bold">
                     Hi&#x2c; I&apos;m Elena Rosa  &mdash;<br></br>
-                    Frontend Developer
+                    Front&ndash;end Developer
                 </Heading>
                 <Text as="p" align="center" className="my-6 w-[90%] sm:w-[60%] md:w-[65%] text-base text-neutral-700 dark:text-neutral-200">
-                    Frontend Developer skilled in JavaScript&#x2c; React&#x2c; TypeScript&#x2c; 
+                    Front&ndash;end Developer skilled in JavaScript&#x2c; React&#x2c; TypeScript&#x2c; 
                     and Next.js&#x2c; with a background in UX&#47;UI engineering&#46;
 
                 </Text>
