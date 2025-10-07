@@ -9,7 +9,7 @@ const AboutDetails = () => {
                     <Text className=" text-neutral-700 dark:text-neutral-200">
                         Hi&#x2c; I&apos;m <Strong>Elena Rosa Wheelen</Strong>&#x2c; a front&ndash;end developer based in South Florida who loves making everyday life a 
                         little easier&#46; I&apos;m driven by curiosity and creativity&#x2c; often building projects that start as simple ideas 
-                        or personal challenges&#46; Each project is a chance to learn&#x2c; experiment&#x2c; and create something meaningful&#46;
+                        or personal challenges&#46; For me&#x2c; each project is a chance to learn&#x2c; experiment&#x2c; and create something meaningful&#46;
 
 
                     </Text>
@@ -40,8 +40,8 @@ const AboutDetails = () => {
                         Behind the Pixels
                     </Heading>
                     <Text className=" text-neutral-700 dark:text-neutral-200">
-                        In my downtime&#x2c; I enjoy learning something new&#x2c; working out&#x2c; 
-                        playing video games with friends&#x2c; or reading manhwa&#46;
+                        In my downtime&#x2c; I enjoy developing personal projects, learning something new&#x2c; hitting the gym&#x2c; 
+                        gaming with friends&#x2c; or reading manhwa&#46;
                     </Text>
                 </Flex>
                 <Flex className="flex-col">
@@ -49,7 +49,6 @@ const AboutDetails = () => {
                         Thanks for visiting!
                     </Heading>
                     <Text className=" text-neutral-700 dark:text-neutral-200">
-                        
                     </Text>
                 </Flex>
             </Flex>

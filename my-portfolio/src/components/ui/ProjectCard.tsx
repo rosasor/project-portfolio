@@ -37,7 +37,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, isImageLeft }) => {
                                 <Strong>{project.title}</Strong>
                             </Text>
                             <Flex>
-                            <Text as="p" className="mt-2 mb-1 text-sm line-clamp-4">
+                            <Text as="p" className="mt-2 mb-1 text-sm line-clamp-5">
                                 {project.description}
                             </Text>
                             </Flex>

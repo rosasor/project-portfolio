@@ -13,10 +13,10 @@ import ImageCard from './ui/ImageCard'
 
 
 const images = [
-    "/Elena_Rosa_Wheelen_Headshot.jpeg",
-    "/Elena_Rosa_Wheelen_Headshot.jpeg",
-    "/Elena_Rosa_Wheelen_Headshot.jpeg",
-    "/Elena_Rosa_Wheelen_Headshot.jpeg",
+    "/Elena_with_friend.svg",
+    "/Elena_wiring.svg",
+    "/Elena_on_cruise.svg",
+    "/Hockey_arena.svg",
 ];
 
 

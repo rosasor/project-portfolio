@@ -11,14 +11,17 @@ const AboutPreview = () => {
                     </Heading>
                     <Text as="p" className="text-neutral-700 dark:text-neutral-200">
                         Front&ndash;end Developer with a strong UX&#47;UI design foundation and hands&ndash;on experience building full&ndash;stack applications 
-                        using React&#x2c; TypeScript&#x2c; and Python&#46; Brings a visual&ndash;first approach to frontend development&#x2c; 
+                        using React&#x2c; TypeScript&#x2c; and Python&#46; Brings a visual&ndash;first approach to front&ndash;end development&#x2c; 
                         paired with real&ndash;world production experience and an eye for pixel&ndash;perfect detail&#46;
                     </Text>
-                    <Button className=" py-2 my-2 gap-4 text-neutral-700 dark:text-neutral-200 hover:underline hover:text-violet-600 dark:hover:text-violet-400">
+                    <Button className="group hover:text-violet-500 hover:dark:text-violet-400 transition-all duration-300 ease-in-out py-2 my-2 gap-4 text-neutral-700 dark:text-neutral-200 
+                    ">
                         <Link 
                         href={"/about"} 
                         rel="noopener noreferrer"
-                        className=""
+                        className="bg-left-bottom bg-gradient-to-r from-violet-500 to-violet-500 dark:from-violet-400 dark:to-violet-400 
+                        bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-400 ease-out"
+                        aria-label="Learn more about Elena Rosa Wheelen"
                         >
                             See More →
                         </Link>
