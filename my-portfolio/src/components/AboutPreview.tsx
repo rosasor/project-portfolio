@@ -21,7 +21,7 @@ const AboutPreview = () => {
                         rel="noopener noreferrer"
                         className="bg-left-bottom bg-gradient-to-r from-violet-500 to-violet-500 dark:from-violet-400 dark:to-violet-400 
                         bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-400 ease-out
-                        focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-offset-2 dark:focus:ring-offset-gray-800 rounded-lg"
+                        focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-offset-2 dark:focus:ring-offset-gray-800"
                         aria-label="Learn more about Elena Rosa Wheelen"
                         >
                             See More →

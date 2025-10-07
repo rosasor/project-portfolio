@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: "Elena the FED!",
   description: "Frontend Developer Portfolio",
   icons: {
-    icon: '/favicon.svg',
+    icon: '/favicon-512x512.png',
   },
 };
 

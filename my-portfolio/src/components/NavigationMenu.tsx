@@ -26,12 +26,11 @@ const NavBar = () => {
 
             return (
                 
-              <NavigationMenu.Item key={link.href} className="flex">
+              <NavigationMenu.Item key={link.href} className="flex" >
                 <motion.div>
                 <Link
                   href={link.href}
                   className={`font-medium text-[.9rem] py-3 transition-colors select-none
-                    focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-offset-2 dark:focus:ring-offset-gray-800 rounded-lg
                     ${
                       isActive
                         ? "text-black dark:text-white"
