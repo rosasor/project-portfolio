@@ -10,8 +10,7 @@ export const metadata: Metadata = {
   title: "Elena the FED!",
   description: "Frontend Developer Portfolio",
   icons: {
-    icon: '/Elena_Headshot.svg', // Relative path to your icon in /public or /app
-    apple: '/apple-icon.png', // Apple Touch Icon
+    icon: '/favicon.svg',
   },
 };
 
