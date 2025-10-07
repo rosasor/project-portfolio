@@ -32,7 +32,7 @@ const SocialIcons = () => {
                                 aria-hidden="true"
                                 width={18}
                                 height={18}
-                                className="text-black dark:text-white transition-colors hover:text-violet-600 dark:hover:text-violet-400"
+                                className="text-black dark:text-white hover:text-violet-600 dark:hover:text-violet-400"
                                 />
                             <span className="sr-only">LinkedIn</span>
                         </motion.div>

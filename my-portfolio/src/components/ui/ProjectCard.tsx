@@ -4,6 +4,7 @@ import { Box, Card, Inset, Text, Strong, Flex, Badge, Button } from "@radix-ui/t
 import Link from "next/link"
 import { ExternalLinkIcon } from "@radix-ui/react-icons"
 import { ProjectData } from "@/data/projectData"
+import { motion } from "framer-motion"
 
 
 type ProjectCardProps = {
@@ -59,7 +60,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, isImageLeft }) => {
                             {project.status === "Live" ? (
                                 <Flex className="my-1 gap-2 items-center">
                                     <Badge 
-                                        color={project.tag === "In-Progress" ? "yellow" : project.tag === "Complete" ? "green" : "red"}
+                                        color={project.tag === "In Progress" ? "yellow" : project.tag === "Complete" ? "green" : "red"}
                                         radius="large"
                                         variant="soft"
                                         className="rounded-md py-1 px-3 text-xs select-none"
@@ -80,21 +81,34 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, isImageLeft }) => {
                                         href={project.link}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className=""
+                                        className="
+                                        focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-offset-2 dark:focus:ring-offset-gray-800 rounded-sm"
                                     >
-                                    <ExternalLinkIcon
-                                            aria-hidden
-                                            width={18}
-                                            height={18}
-                                            href={project.link}
-                                            className="transition-colors hover:text-violet-600 dark:hover:text-violet-400"
-                                        /> 
+                                        <motion.div
+                                            className="p-1 rounded-lg bg-none hover:bg-neutral-200 dark:hover:bg-neutral-700
+                                            transition-colors hover:text-violet-600 dark:hover:text-violet-400"
+                                            initial={{
+                                                rotate:0
+                                            }}
+                                            whileHover={{
+                                                scale: 1.1,
+                                                rotate: -5,
+                                            }}
+                                        >
+                                        <ExternalLinkIcon
+                                                aria-hidden
+                                                width={18}
+                                                height={18}
+                                                href={project.link}
+                                                className="text-black dark:text-white hover:text-violet-600 dark:hover:text-violet-400"
+                                            /> 
+                                        </motion.div>
                                     </Link>
                                 </Flex>
                              ) : (
                                 <Flex className="my-1 gap-2 items-center">
                                     <Badge 
-                                        color={project.tag === "In-Progress" ? "yellow" : project.tag === "Complete" ? "green" : "red"}
+                                        color={project.tag === "In Progress" ? "yellow" : project.tag === "Complete" ? "green" : "red"}
                                         radius="large"
                                         variant="soft"
                                         className="rounded-md py-1 px-3 text-xs select-none"

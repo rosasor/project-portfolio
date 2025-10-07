@@ -72,7 +72,8 @@ export const PrevButton: React.FC<PropType> = (props) => {
             <button
             className="p-1 cursor-pointer
             rounded-lg bg-none hover:bg-neutral-200 dark:hover:bg-neutral-700
-            transition-colors hover:text-violet-600 dark:hover:text-violet-400"
+            transition-colors hover:text-violet-600 dark:hover:text-violet-400
+            focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-offset-2 dark:focus:ring-offset-gray-800 rounded-lg"
             type="button"
             {...restProps}
             >
@@ -103,7 +104,8 @@ export const NextButton: React.FC<PropType> = (props) => {
             <button
                 className="p-1 cursor-pointer
                 rounded-lg bg-none hover:bg-neutral-200 dark:hover:bg-neutral-700
-                transition-colors hover:text-violet-600 dark:hover:text-violet-400"
+                transition-colors hover:text-violet-600 dark:hover:text-violet-400
+                focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-offset-2 dark:focus:ring-offset-gray-800 rounded-lg"
                 type="button"
                 {...restProps}
             >

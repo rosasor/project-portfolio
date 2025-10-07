@@ -21,7 +21,7 @@ export const project: ProjectData[] = [
         status: "In Progress",
         year: 2025,
         link: "",
-        tag: "In-Progress"
+        tag: "In Progress"
     },
     {
         id: 2,
@@ -33,7 +33,7 @@ export const project: ProjectData[] = [
         status: "Live",
         year: 2025,
         link: "https://app.bangflashmecardbang.win",
-        tag: "In-Progress"
+        tag: "In Progress"
     },
     {
         id: 3,
@@ -46,7 +46,7 @@ export const project: ProjectData[] = [
         status: "Live",
         year: 2025,
         link: "https://rulm.xyz",
-        tag: "On-Hold"
+        tag: "On Hold"
 
     },
     {
